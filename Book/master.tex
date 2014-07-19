@@ -1,0 +1,48 @@
+ \documentclass[a4paper,11pt]{book}
+
+%font
+\usepackage[T1]{fontenc}
+\usepackage[tracking]{microtype}
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\linespread{1.025}              % Palatino leads a little more leading
+
+
+%margins
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={210mm,297mm},
+	left=15mm,
+	right=15mm,
+	top=2mm,
+	bottom=2mm,
+}
+
+%
+\usepackage{amsmath}
+%chapter number title position
+\usepackage{quotchap}
+
+\author{Dario L}
+\title{Mathematics}
+\date{\today}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\chapter*{Preface}
+\textbf{Mathematics possesses not only truth, but supreme beauty,a beauty cold and austere, like that of a sculpture,
+and capable of stern perfection, such as only great art can show.\\ --Bertrand Russell}
+
+
+
+\tableofcontents
+
+\mainmatter
+%preface
+
+\include{./tex_files/chapter01}
+
+
+\end{document}
